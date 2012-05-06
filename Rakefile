@@ -22,14 +22,21 @@ end
 
 Bundler::GemHelper.install_tasks
 
-require 'rake/testtask'
-
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = false
+require 'jeweler'
+require './lib/restfulie-client/version'
+Jeweler::Tasks.new do |gem|
+  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
+  gem.name = "restfulie-client"
+  gem.version = Restfulie::Client::VERSION
+  gem.summary = %Q{Hypermedia aware resource based library in ruby.}
+  gem.description = %Q{restfulie-client}
+  gem.email = "guilherme.silveira@caelum.com.br"
+  gem.homepage = "http://restfulie.caelumobjects.com"
+  gem.authors = ["Guilherme Silveira, Caue Guerra, Luis Cipriani, Everton Ribeiro, George Guimaraes, Paulo Ahagon, and many more!"]
+  gem.files =
+  gem.files.exclude 'spec/**/*'
 end
+Jeweler::RubygemsDotOrgTasks.new
 
 
 task :default => :test

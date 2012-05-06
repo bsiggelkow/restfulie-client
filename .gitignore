@@ -1,6 +1,4 @@
 coverage
-Gemfile.lock
-test.sqlite3
 doc
 *.gem
 pkg
@@ -10,11 +8,9 @@ tmtags
 *.swp
 *.swo
 .rvmrc
-*.sqlite3
 log
 *.log
 .DS_Store
 .yardoc
 server.pid
 .bundle
-site/config/environment.rb

@@ -1,14 +1,13 @@
 source :gemcutter
 
-gemspec
-
-gem 'medie', :git => 'git@github.com:mgailey/medie.git'
+gem 'medie', '~> 1.0.0', :git => 'git@github.com:mgailey/medie.git'
 
 group :development do
-  gem "yard"
+  gem 'yard'
+  gem 'jeweler'
 end
 
 group :development, :test do
-  gem "rspec-rails"
-  gem "webmock"
+  gem 'rspec-rails'
+  gem 'webmock'
 end  
