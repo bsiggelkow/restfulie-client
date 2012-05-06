@@ -1,12 +1,12 @@
 GIT
   remote: git@github.com:mgailey/medie.git
-  revision: e889b60fff0c3c1a7b61e890532dd1fbc8755bb6
+  revision: 2d50d992725b00db01d3ed6d7251bc828a03b85a
   specs:
     medie (1.0.1)
       activesupport (~> 3.2.0)
-      builder
-      i18n
-      json_pure
+      builder (~> 3.0.0)
+      i18n (~> 0.6.0)
+      json_pure (~> 1.7.0)
       methodize (= 0.2.0)
 
 GEM
