@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE",
     "Rakefile",
     "init.rb",
