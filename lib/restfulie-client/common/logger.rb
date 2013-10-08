@@ -12,7 +12,7 @@ module Restfulie
         @@logger = value
       end
 
-      @@logger = ActiveSupport::BufferedLogger.new(STDOUT)
+      @@logger = ActiveSupport::Logger.new(STDOUT)
       @@logger.level = ::Logger::DEBUG
     end
   end

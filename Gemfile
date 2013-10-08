@@ -1,6 +1,7 @@
-source :gemcutter
+source 'https://rubygems.org'
 
-gem 'medie', '~> 1.0.0', :git => 'git@github.com:mgailey/medie.git'
+gem 'activesupport', '>= 4.0.0'
+gem 'medie', '>= 1.0.0', :git => 'git@github.com:bsiggelkow/medie.git'
 
 group :development do
   gem 'yard'
